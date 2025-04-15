@@ -252,12 +252,7 @@ footer {
   transition: color 0.3s;
 }
 
-.social-links a {
-  transition: transform 0.3s, color 0.3s;
-}
-
 .social-links a:hover {
-  transform: translateY(-3px);
   color: var(--primary-color);
 }
 
