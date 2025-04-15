@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Veronica - Кондитерские шедевры с любовью</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sweet Veronica</div>
+        <div class="tagline">Кондитерские шедевры с любовью</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#gallery">Мои работы</a></li>
+            <li><a href="#order">Заказать</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Добро пожаловать на мою кухню!</h2>
+            <div class="about">
+                <div class="about-text">
+                    <p>Привет! Я — Вероника, кондитер с 10-летним стажем, мама двух сладкоежек и жена главного дегустатора.</p>
+                    <p>Моя страсть к выпечке началась с детства, когда я помогала бабушке готовить пироги. С тех пор я превратила это увлечение в профессию, пройдя обучение у лучших мастеров и разработав сотни уникальных рецептов.</p>
+                    <p>В своем творчестве я сочетаю традиционные техники с современными тенденциями. Каждое изделие — это не просто десерт, а маленькое произведение искусства, наполненное теплом и заботой.</p>
+                    <p>В свободное время люблю экспериментировать с новыми вкусами и делиться своими находками с подписчиками. Присоединяйтесь к моему сладкому путешествию!</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/baker.avif" alt="Вероника за работой">
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery">
+            <h2>Мои работы</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/cake.avif" alt="Торт">
+                    <div class="gallery-caption">Свадебный торт "Нежность"</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/macarons.avif" alt="Макаруны">
+                    <div class="gallery-caption">Макаруны с малиной</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pastries.avif" alt="Пирожные">
+                    <div class="gallery-caption">Ассорти пирожных</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cupcakes.avif" alt="Кексы">
+                    <div class="gallery-caption">Кексы с кремом</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/chocolate-cake.avif" alt="Шоколадный торт">
+                    <div class="gallery-caption">Шоколадный торт "Мечта"</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pie.avif" alt="Пирог">
+                    <div class="gallery-caption">Яблочный пирог</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="order">
+            <h2>Форма заказа</h2>
+            <form class="order-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="product">Выберите изделие*</label>
+                    <select id="product" name="product" required>
+                        <option value="">-- Выберите вариант --</option>
+                        <option value="wedding-cake">Свадебный торт</option>
+                        <option value="birthday-cake">Торт на день рождения</option>
+                        <option value="cupcakes">Кексы (12 шт)</option>
+                        <option value="macarons">Макаруны (20 шт)</option>
+                        <option value="pie">Пирог</option>
+                        <option value="other">Другое (указать в комментарии)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Дата получения*</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Дополнительные детали (вкус, оформление, аллергены и т.д.)</label>
+                    <textarea id="details" name="details"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Отправить заказ</button>
+            </form>
+        </section>
+        
+        <section id="contact">
+            <h2>Свяжитесь со мной</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p>+7 (123) 456-78-90</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>hello@sweetveronica.ru</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Сладкая, 15</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2025 Sweet Veronica. Все права защищены.</p>
+        <div class="gallery-item">
+    </footer>
+</body>
+</html>
